@@ -1,0 +1,9 @@
+version: "2"
+services:
+  lava-slave0:
+    hostname: lava-slave0
+    restart: always
+    build:
+      context: ./
+    extra_hosts:
+      - "lava-master:172.17.0.1"
